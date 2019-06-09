@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backstuff"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:paddingTop="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingHorizontal="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/lginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Email"
+            android:textSize="30sp"
+            android:background="@drawable/round_edttxt"
+            android:layout_marginTop="50dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"/>
+
+        <EditText
+            android:id="@+id/lginpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Password"
+            android:textSize="30sp"
+            android:background="@drawable/round_edttxt"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edttxt"
+        android:backgroundTint="#0176FF"
+        android:text="Sign in"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/gosignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?\nSign up"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="10dp"
+        android:clickable="true"/>
+</LinearLayout>
